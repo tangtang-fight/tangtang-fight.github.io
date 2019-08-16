@@ -266,29 +266,64 @@
 
 
   
-    <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-CSS3学习P1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/14/我的第一篇博客文章/">我的第一篇博客文章</a>
+      <a class="article-title" href="/2019/08/14/CSS3学习P1/">CSS3学习</a>
     </h1>
   
 
         
-        <a href="/2019/08/14/我的第一篇博客文章/" class="archive-article-date">
-  	<time datetime="2019-08-14T06:45:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-14</time>
+        <a href="/2019/08/14/CSS3学习P1/" class="archive-article-date">
+  	<time datetime="2019-08-14T15:55:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>内容</p>
+        <h1 id="CSS3笔记"><a href="#CSS3笔记" class="headerlink" title="CSS3笔记"></a>CSS3笔记</h1><h2 id="P1"><a href="#P1" class="headerlink" title="P1"></a>P1</h2><blockquote>
+<p>问题：<br></p>
+<ol>
+<li>css的全程是什么？<br></li>
+<li>样式表的组成？<br></li>
+<li>浏览器读取编译的css的顺序是？</li>
+</ol>
+</blockquote>
+<h2 id="前端三大重要点：HTML-CSS和JS"><a href="#前端三大重要点：HTML-CSS和JS" class="headerlink" title="前端三大重要点：HTML CSS和JS"></a><strong>前端三大重要点</strong>：HTML CSS和JS</h2><h2 id="1-CSS全名（Cascading-Style-Sheets）：层叠样式表"><a href="#1-CSS全名（Cascading-Style-Sheets）：层叠样式表" class="headerlink" title="1.CSS全名（Cascading Style Sheets）：层叠样式表"></a>1.CSS全名（Cascading Style Sheets）：层叠样式表</h2><h2 id="2-样式表的组成"><a href="#2-样式表的组成" class="headerlink" title="2.样式表的组成"></a>2.样式表的组成</h2><blockquote>
+<p>①:样式表<br><br>②:样式表由规则组成<br><br>③:规则由选择器+声明块组成<br><br>④:声明块由一条条的声明组成,声明是由css属性+css属性值组成的键值对<br></p>
+</blockquote>
+<h2 id="3：浏览器读取选择器的顺序：从右往左"><a href="#3：浏览器读取选择器的顺序：从右往左" class="headerlink" title="3：浏览器读取选择器的顺序：从右往左"></a>3：浏览器读取选择器的顺序：从右往左</h2><pre><code>如果是从左往右，就要找页面中的所有的div 然后找下一层 这样大大提高了时间复杂度</code></pre><h2 id="4：学习css属性一定要知道两个东西：是否可继承和默认值"><a href="#4：学习css属性一定要知道两个东西：是否可继承和默认值" class="headerlink" title="4：学习css属性一定要知道两个东西：是否可继承和默认值"></a>4：学习css属性一定要知道两个东西：是否可继承和默认值</h2><h2 id="5：css3需要学的东西"><a href="#5：css3需要学的东西" class="headerlink" title="5：css3需要学的东西"></a>5：css3需要学的东西</h2><p><img src="https://github.com/tangtang-fight/local-repository/blob/master/P1css3.png" alt="css3"></p>
+<blockquote>
+<p>再加上加上选择器和布局扩展</p>
+</blockquote>
+<h1 id="P1选择器"><a href="#P1选择器" class="headerlink" title="P1选择器"></a><strong>P1选择器</strong></h1><h2 id="第一部分-选择器"><a href="#第一部分-选择器" class="headerlink" title="第一部分:选择器"></a>第一部分:选择器</h2><h3 id="一：基本选择器及其扩展"><a href="#一：基本选择器及其扩展" class="headerlink" title="一：基本选择器及其扩展"></a>一：基本选择器及其扩展</h3><p><strong>基本选择器：</strong></p>
+<blockquote>
+<p><strong>id选择器</strong>(#)<br><br><strong>类选择器</strong>(.类名)<br><br><strong>元素选择器</strong>（元素名）<br><br><strong>通配符选择器</strong>（<em>）<br><br>*</em>后代（儿子孙子）选择器<strong>(空格)<br><br>**选择器分组(结合符”，”)：</strong>h2,h3,h3{}<br><br><strong>子元素（直接后代）选择器：</strong>ul&gt;li    (与后代元素选    择器的区别：他只找儿子不找孙子)<br><br><strong>相邻兄弟选择器**</strong>+inner（）<br><br><strong>通用兄弟选择器(只要是我兄弟就选)</strong>：~div<br>**<br>Css声明的优先级**：优先级不是选择器的而是声明的<br>快捷键ctrl f 全部替换</p>
+</blockquote>
+<h3 id="二：去mdn上去查选择器的最新规范"><a href="#二：去mdn上去查选择器的最新规范" class="headerlink" title="二：去mdn上去查选择器的最新规范"></a>二：去mdn上去查选择器的最新规范</h3><p><strong>属性选择器：</strong><br><br>存在选择器    div[name]有name属性就行<br><br>存在值选择器div[name=li]选择div下name为li的<br></p>
+<p>Div[name ^=“li”]选择属性名以li开头的<br><br>Div[name $=“li”]选择属性名以li结尾的<br><br>Div[name *=“li”]只要字符串中有li就选中</p>
+<h3 id="三：链接伪类"><a href="#三：链接伪类" class="headerlink" title="三：链接伪类"></a>三：链接伪类</h3><p><img src="https://github.com/tangtang-fight/local-repository/blob/master/P1css3_2.png" alt="2"><br><br>：target{<br>          Display：block；    实现选项卡<br>}<br>总结：其实就是点链接跳转到了</p>
+<h3 id="四：动态伪类"><a href="#四：动态伪类" class="headerlink" title="四：动态伪类"></a>四：动态伪类</h3><p><img src="https://github.com/tangtang-fight/local-repository/blob/master/p1css3_3.png" alt="3"></p>
+<h3 id="五：表单伪类"><a href="#五：表单伪类" class="headerlink" title="五：表单伪类"></a>五：表单伪类</h3><p><img src="https://github.com/tangtang-fight/local-repository/blob/master/p1class_4.png" alt="4"><br><br>单选按钮得加name属性–才是单选，要不然就是多选了<br>对于开启绝对定位的子元素，让其和开启相对定位父元素一样大小                label &gt; span{<br>                position: absolute;<br>                /<em>让span和label大小一致</em>/<br>                left: 0;<br>                bottom: 0;<br>                top: 0;<br>                right: 0;<br>        }</p>
+<h3 id="六：结构性伪类（css3重点）"><a href="#六：结构性伪类（css3重点）" class="headerlink" title="六：结构性伪类（css3重点）"></a>六：结构性伪类（css3重点）</h3><p><img src="https://github.com/tangtang-fight/local-repository/blob/master/p1css3_5.png" alt="5"><br><br>：nth-child（x）{}第几个子元素    ：x：even为偶数，odd奇数<br></p>
+<blockquote>
+<p>（1）#wrap li:nth-child(1)  找到wrap底下所有子元素，并且选中第一个子元素，并且这个子元素必须是li（这个位置必须是第一））<br><br>（2）#wrap p:nth-of-type(1)    找到wrap底下所有子元素，第一个p标签  （这个位置可以在第二第三上）<br><br>（3）#wrap  a:not(nth-of-type){}     除了最后一个标签为a的<br></p>
+</blockquote>
+<h3 id="七：结构性伪类的坑"><a href="#七：结构性伪类的坑" class="headerlink" title="七：结构性伪类的坑"></a>七：结构性伪类的坑</h3><blockquote>
+<p>.wrap p:nth-of-type(1）    对于子元素标签不同，但是class一样时。以元素为中心，他会将所有class编辑为标签元素，全部选中</p>
+</blockquote>
+<h3 id="八：伪元素选择器"><a href="#八：伪元素选择器" class="headerlink" title="八：伪元素选择器"></a>八：伪元素选择器</h3><blockquote>
+<p>(让css选择器有能力去选择DOM树以外的东西)<br>（DOM树是为了解析HTML生成的）<br></p>
+</blockquote>
+<blockquote>
+<p><strong>一个元素上下就只有一个before和一个after（两个子元素）</strong><br><br>（1）before用来清除浮动<br><br>（2）After  高度塌陷<br><br>（3）first-letter伪元素：选中第一个字。        用法：#wrap：first-letter{}<br><br>（4）First-line伪元素：选中第一行<br><br>（5）Selection ：鼠标左键原始选中文字的时候，选中部分为蓝颜色。没选中则为白颜色。用selection后可以改变鼠标选中文字时，选中部分的颜色（样式）<br><br>（6）：root    选择根元素，（因为部分浏览器根元素为html，有些为body）</p>
+</blockquote>
+<h3 id="九：声明的优先级（权重）"><a href="#九：声明的优先级（权重）" class="headerlink" title="九：声明的优先级（权重）"></a>九：声明的优先级（权重）</h3><p><img src="https://github.com/tangtang-fight/local-repository/blob/master/p1css3_6.png" alt="6"></p>
 
       
 
@@ -301,7 +336,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/14/我的第一篇博客文章/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/14/CSS3学习P1/">展开全文 >></a>
         </p>
       
 
