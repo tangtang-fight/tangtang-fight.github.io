@@ -6,19 +6,29 @@
   <meta name="keywords" content>
   <meta name="description" content="CSS3学习 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="一：优秀的hexo博客编辑器 github下载地址：https://github.com/zhuzhuyule/HexoEditor  二：功能1：截图功能 截图后悔在本地的文件夹下直接生成图片   2:可以直接将图片上传到SM.MS图床（免费）上，并将路径变为图床的链接。 3：这样启动hexo后就能在本地http://localhost:4000/上看到新写的内容。">
+<meta name="description" content="一：3D变形的内容  1：3D旋转（rotate）效果：  普通的2D旋转，没有给人一种立体感觉使得3D立体效果明显—-景深（perspective）概念：   对于前端：就是肉眼距离显示器的距离，景深越大，效果越差用法：perspective: 100px;注意：它是写给父元素，作用于子元素。1：rotateX（360deg）；2：rotateY（360deg）;3：rotate3d（x,y,z">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexoEditor">
-<meta property="og:url" content="http://yoursite.com/2019/08/28/hexoEditor/index.html">
+<meta property="og:title" content="CSS3-3D变换">
+<meta property="og:url" content="http://yoursite.com/2019/08/29/CSS3-3D变换/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一：优秀的hexo博客编辑器 github下载地址：https://github.com/zhuzhuyule/HexoEditor  二：功能1：截图功能 截图后悔在本地的文件夹下直接生成图片   2:可以直接将图片上传到SM.MS图床（免费）上，并将路径变为图床的链接。 3：这样启动hexo后就能在本地http://localhost:4000/上看到新写的内容。">
+<meta property="og:description" content="一：3D变形的内容  1：3D旋转（rotate）效果：  普通的2D旋转，没有给人一种立体感觉使得3D立体效果明显—-景深（perspective）概念：   对于前端：就是肉眼距离显示器的距离，景深越大，效果越差用法：perspective: 100px;注意：它是写给父元素，作用于子元素。1：rotateX（360deg）；2：rotateY（360deg）;3：rotate3d（x,y,z">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://i.loli.net/2019/08/28/y5jmOgY2Zdz6HlX.png">
-<meta property="og:updated_time" content="2019-08-28T10:35:37.732Z">
+<meta property="og:image" content="https://i.loli.net/2019/08/29/wjBWT4E1QKmLito.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/29/k9tqmofFwcdWKrh.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/29/K8ZQeAGuBhW3CpX.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/29/U4u7MFLe1dz5y2v.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/29/HQ7XaTtvChdy3lo.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/29/8hoDegHLkyw4VXW.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/29/MqDZbEzxX3PdkSO.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/29/pYuoI2M4thGjHSU.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/29/q5kucZRCeNltIo6.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/29/mAbHGSTWhV952yY.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/29/VvApgE1nLiGojcZ.png">
+<meta property="og:updated_time" content="2019-08-29T14:12:33.012Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexoEditor">
-<meta name="twitter:description" content="一：优秀的hexo博客编辑器 github下载地址：https://github.com/zhuzhuyule/HexoEditor  二：功能1：截图功能 截图后悔在本地的文件夹下直接生成图片   2:可以直接将图片上传到SM.MS图床（免费）上，并将路径变为图床的链接。 3：这样启动hexo后就能在本地http://localhost:4000/上看到新写的内容。">
-<meta name="twitter:image" content="https://i.loli.net/2019/08/28/y5jmOgY2Zdz6HlX.png">
+<meta name="twitter:title" content="CSS3-3D变换">
+<meta name="twitter:description" content="一：3D变形的内容  1：3D旋转（rotate）效果：  普通的2D旋转，没有给人一种立体感觉使得3D立体效果明显—-景深（perspective）概念：   对于前端：就是肉眼距离显示器的距离，景深越大，效果越差用法：perspective: 100px;注意：它是写给父元素，作用于子元素。1：rotateX（360deg）；2：rotateY（360deg）;3：rotate3d（x,y,z">
+<meta name="twitter:image" content="https://i.loli.net/2019/08/29/wjBWT4E1QKmLito.png">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -209,7 +219,7 @@
 
 
 <ul>
-    <li><div class="all active">全部文章<small>(3)</small></div></li>
+    <li><div class="all active">全部文章<small>(5)</small></div></li>
     
 </ul>
 <div class="left-bottom">
@@ -221,7 +231,7 @@
     </div>
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="3">
+<input type="hidden" id="yelog_site_posts_number" value="5">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -262,6 +272,30 @@
     <nav id="title-list-nav">
         
         <a  class=""
+           href="/2019/08/29/CSS3-3D变换/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="CSS3-3D变换">CSS3-3D变换</span>
+            <span class="post-date" title="2019-08-29 14:59:13">2019/08/29</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/08/14/CSS3学习P1/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="CSS3学习">CSS3学习</span>
+            <span class="post-date" title="2019-08-14 23:55:45">2019/08/14</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/08/28/CSS3时钟/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="CSS3时钟">CSS3时钟</span>
+            <span class="post-date" title="2019-08-28 19:43:43">2019/08/28</span>
+        </a>
+        
+        <a  class=""
            href="/2019/08/28/hexoEditor/"
            data-tag=""
            data-author="" >
@@ -274,14 +308,6 @@
            data-tag=""
            data-author="" >
             <span class="post-title" title="Makedown的基本用法">Makedown的基本用法</span>
-            <span class="post-date" title="2019-08-14 23:55:45">2019/08/14</span>
-        </a>
-        
-        <a  class=""
-           href="/2019/08/14/CSS3学习P1/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="CSS3学习">CSS3学习</span>
             <span class="post-date" title="2019-08-14 23:55:45">2019/08/14</span>
         </a>
         

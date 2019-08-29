@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>Hexo</title>
+  <title>CSS3-3D变换 | Hexo</title>
   <meta name="keywords" content>
-  <meta name="description" content="Hexo">
+  <meta name="description" content="CSS3-3D变换 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="一：3D变形的内容  1：3D旋转（rotate）效果：  普通的2D旋转，没有给人一种立体感觉使得3D立体效果明显—-景深（perspective）概念：   对于前端：就是肉眼距离显示器的距离，景深越大，效果越差用法：perspective: 100px;注意：它是写给父元素，作用于子元素。1：rotateX（360deg）；2：rotateY（360deg）;3：rotate3d（x,y,z">
 <meta property="og:type" content="article">
@@ -64,7 +64,7 @@
 </div>
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/avatar.jpg" />
@@ -321,12 +321,43 @@
         </div>
     </div>
 </aside>
-<div class="post index">
+<div class="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-CSS3-3D变换" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#对博客的理解"><span class="toc-text">对博客的理解</span></a></li></ol></li></ol>
+        <h1 class="article-title">CSS3-3D变换</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-08-29 22:12:33'>2019-08-29 14:59</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一：3D变形的内容"><span class="toc-text">一：3D变形的内容</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1：3D旋转（rotate）"><span class="toc-text">1：3D旋转（rotate）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2：3D平移（translate）"><span class="toc-text">2：3D平移（translate）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3D缩放（scale）"><span class="toc-text">3:3D缩放（scale）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-3D景深-respective"><span class="toc-text">4:3D景深(respective)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5：灭点"><span class="toc-text">5：灭点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6：3D舞台-transform-style"><span class="toc-text">6：3D舞台(transform-style)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7：3D小应用（立方体）"><span class="toc-text">7：3D小应用（立方体）</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -339,32 +370,76 @@
     }
 </style>
 </div>
-            <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a>Why Blog</h1><h2 id="对博客的理解"><a href="#对博客的理解" class="headerlink" title="对博客的理解"></a>对博客的理解</h2><p>喜欢写Blog的人，会经历三个阶段。</p>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="一：3D变形的内容"><a href="#一：3D变形的内容" class="headerlink" title="一：3D变形的内容"></a>一：3D变形的内容</h1><p><img src="https://i.loli.net/2019/08/29/wjBWT4E1QKmLito.png" alt></p>
+<hr>
+<h2 id="1：3D旋转（rotate）"><a href="#1：3D旋转（rotate）" class="headerlink" title="1：3D旋转（rotate）"></a>1：3D旋转（rotate）</h2><p>效果：<img src="https://i.loli.net/2019/08/29/k9tqmofFwcdWKrh.png" alt></p>
 <blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p>
+<p>普通的2D旋转，没有给人一种立体感觉<br>使得3D立体效果明显—-景深（perspective）<br>概念：<br><img src="https://i.loli.net/2019/08/29/K8ZQeAGuBhW3CpX.png" alt></p>
 </blockquote>
+<hr>
+<p><strong>对于前端：就是肉眼距离显示器的距离，景深越大，效果越差</strong><br>用法：<code>perspective: 100px;</code><br>注意：它是写给父元素，作用于子元素。<br><code>1：rotateX（360deg）；</code>2：rotateY（360deg）;<br><code>3：rotate3d（x,y,z,360deg）;</code>前面三个就是一个点坐标。代表圆心和这个点形成的射线，以此为轴进行旋转。</p>
+<hr>
+<h2 id="2：3D平移（translate）"><a href="#2：3D平移（translate）" class="headerlink" title="2：3D平移（translate）"></a>2：3D平移（translate）</h2><blockquote>
+<p>1：父元素加景深。perspective=100px;<br>2:<code>transform: translateZ(100px);</code><br>3:效果：向屏幕外移动。<br>4：<code>transform: translate3d(100px,100px,100px);</code>(三个参数也是一个坐标)</p>
+</blockquote>
+<hr>
+<h2 id="3-3D缩放（scale）"><a href="#3-3D缩放（scale）" class="headerlink" title="3:3D缩放（scale）"></a>3:3D缩放（scale）</h2><blockquote>
+<p>1：<code>transform: scaleY(2);</code>//这样单独写没有意义，并不会有什么效果。<br>2：<code>transform: scale3d(2,2,2);</code> //意义不大<br>注意：这里的缩放需要和其他效果组合，就会产生不错的效果。<br>①：<code>transform: translateZ(100px) scaleZ(2);</code>//向前走100px。（但没有放大两倍，这里scale只能让其放大，不能决定放大多少倍）<br>②：<code>transform: scaleZ(2) translateZ(100px);</code>//向前走200px。</p>
+</blockquote>
+<hr>
+<h2 id="4-3D景深-respective"><a href="#4-3D景深-respective" class="headerlink" title="4:3D景深(respective)"></a>4:3D景深(respective)</h2><blockquote>
+<p>作用：让3D有近大远小的效果。<br>继承性：无（但是它是可以作用于后代子元素的，不是作用于本身）。<br><img src="https://i.loli.net/2019/08/29/U4u7MFLe1dz5y2v.png" alt><br>形式：①：<code>respective=100px;</code>//写在父元素中(<strong>作用于后代</strong>)<br>②：<code>transform = respective(100px);</code>//写在父元素(<strong>作用于元素本身</strong>)<br>③：组合：<code>transform = respective(100px) rotate(0deg);</code><br><strong>注意：组合时，respective函数必须放在首位，放在后面会被忽略,组合一般不用（麻烦）.</strong></p>
+</blockquote>
+<p><strong>景深基点：</strong><code>respective-origin = left top；</code>//改变灭点的位置</p>
+<hr>
+<h2 id="5：灭点"><a href="#5：灭点" class="headerlink" title="5：灭点"></a>5：灭点</h2><p><img src="https://i.loli.net/2019/08/29/HQ7XaTtvChdy3lo.png" alt><br><img src="https://i.loli.net/2019/08/29/8hoDegHLkyw4VXW.png" alt></p>
 <blockquote>
-<p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p>
+<p>原理：景深越大，灭点越远，元素变形更小。</p>
 </blockquote>
+<hr>
+<h2 id="6：3D舞台-transform-style"><a href="#6：3D舞台-transform-style" class="headerlink" title="6：3D舞台(transform-style)"></a>6：3D舞台(transform-style)</h2><p><strong>作用：景深让其拥有近大远小，但是没有层次感：营造有层级的3D</strong></p>
 <blockquote>
-<p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
+<p>继承：不可继承（作用于子元素）<br><img src="https://i.loli.net/2019/08/29/MqDZbEzxX3PdkSO.png" alt><br>想要其随着旋转能旋转到灰色背景的后面—出现层次感。<br>用法：<code>transform-style: preserve-3d;</code><br>效果：红色慢慢转动逐渐被grey背景吃掉。<br><img src="https://i.loli.net/2019/08/29/pYuoI2M4thGjHSU.png" alt>=》<img src="https://i.loli.net/2019/08/29/q5kucZRCeNltIo6.png" alt></p>
 </blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<p>主要功能：</p>
-<ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad/手机等移动端适配</li>
-<li>页面全局快捷键 <a href='http://yelog.org/2017/03/24/3-hexo-shortcuts/'>3-hexo快捷键说明</a></li>
-</ul>
+<hr>
+<h2 id="7：3D小应用（立方体）"><a href="#7：3D小应用（立方体）" class="headerlink" title="7：3D小应用（立方体）"></a>7：3D小应用（立方体）</h2><blockquote>
+<p><code>backface-visibility</code>:设置属性是否显示背面（默认为显示）。<br>属性值：①：hidden<br>②：visible<br>效果：backface-visibility: visible;（默认）<br><img src="https://i.loli.net/2019/08/29/mAbHGSTWhV952yY.png" alt><br><code>backface-visibility: hidden；</code><br><img src="https://i.loli.net/2019/08/29/VvApgE1nLiGojcZ.png" alt></p>
+</blockquote>
 
-        </article>
-        
-        <p>
-            <a href="javascript:void(0)" class="dashang" onclick="dashangToggle()">赏</a>
-        </p>
-        
-        
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a href="javascript:void(0)" class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>CSS3-3D变换</p>
+    
+    <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="John Doe">John Doe</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-08-29, 14:59:13</p>
+    <p><span class="copy-title">最后更新:</span>2019-08-29, 22:12:33</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/08/29/CSS3-3D变换/" title="CSS3-3D变换">http://yoursite.com/2019/08/29/CSS3-3D变换/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">©2016-2019 Yelog</p>
