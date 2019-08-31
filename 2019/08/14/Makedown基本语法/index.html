@@ -6,20 +6,23 @@
   <meta name="keywords" content>
   <meta name="description" content="Makedown的基本用法 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="P3新的UI方案 UI:你所能看到的所有图形都叫UI  一：文本新增样式（1）opacity：改变透明度（IE9及以上）img{    opacity:0.4;    filter:alpha(opacity=40); /* 针对 IE8 以及更早的版本 */}父元素opacity=0.5，他不能继承，但是能影响到子元素的透明度。（MDN继承性为0） 但当子元素也设置opacity时：子元素opa">
+<meta name="description" content="一：动画（animation）animation的API 1：动画的关键帧（animation-name：关键帧名字；） 切记这里不是要动画的属性名，而是关键帧名字。关键帧名字：@keyframes 关键帧名字{}  2:动画时间（animation-duration：3s；） 3：动画的功能（animation-timing-function： ；） 4：动画延迟（animation-delay">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS3-P3新UI方案">
-<meta property="og:url" content="http://yoursite.com/2019/08/29/CSS3-P3新UI方案/index.html">
+<meta property="og:title" content="CSS3-动画（animation）">
+<meta property="og:url" content="http://yoursite.com/2019/08/30/CSS3-动画（animation）/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="P3新的UI方案 UI:你所能看到的所有图形都叫UI  一：文本新增样式（1）opacity：改变透明度（IE9及以上）img{    opacity:0.4;    filter:alpha(opacity=40); /* 针对 IE8 以及更早的版本 */}父元素opacity=0.5，他不能继承，但是能影响到子元素的透明度。（MDN继承性为0） 但当子元素也设置opacity时：子元素opa">
+<meta property="og:description" content="一：动画（animation）animation的API 1：动画的关键帧（animation-name：关键帧名字；） 切记这里不是要动画的属性名，而是关键帧名字。关键帧名字：@keyframes 关键帧名字{}  2:动画时间（animation-duration：3s；） 3：动画的功能（animation-timing-function： ；） 4：动画延迟（animation-delay">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://i.loli.net/2019/08/29/T2zZJnFjRo7MvCk.png">
-<meta property="og:image" content="https://i.loli.net/2019/08/29/FJ3BpHdMie9ohcS.png">
-<meta property="og:updated_time" content="2019-08-29T15:24:51.895Z">
+<meta property="og:image" content="https://i.loli.net/2019/08/30/s5mI768ZgAdWLDH.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/30/Fvj9rPJatg6sOf8.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/30/Mqb3VlkQezchTgy.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/30/oSs9bengaPItK1f.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/30/pNzRTrWEi7D6t4x.png">
+<meta property="og:updated_time" content="2019-08-30T10:02:31.162Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS3-P3新UI方案">
-<meta name="twitter:description" content="P3新的UI方案 UI:你所能看到的所有图形都叫UI  一：文本新增样式（1）opacity：改变透明度（IE9及以上）img{    opacity:0.4;    filter:alpha(opacity=40); /* 针对 IE8 以及更早的版本 */}父元素opacity=0.5，他不能继承，但是能影响到子元素的透明度。（MDN继承性为0） 但当子元素也设置opacity时：子元素opa">
-<meta name="twitter:image" content="https://i.loli.net/2019/08/29/T2zZJnFjRo7MvCk.png">
+<meta name="twitter:title" content="CSS3-动画（animation）">
+<meta name="twitter:description" content="一：动画（animation）animation的API 1：动画的关键帧（animation-name：关键帧名字；） 切记这里不是要动画的属性名，而是关键帧名字。关键帧名字：@keyframes 关键帧名字{}  2:动画时间（animation-duration：3s；） 3：动画的功能（animation-timing-function： ；） 4：动画延迟（animation-delay">
+<meta name="twitter:image" content="https://i.loli.net/2019/08/30/s5mI768ZgAdWLDH.png">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -210,7 +213,7 @@
 
 
 <ul>
-    <li><div class="all active">全部文章<small>(6)</small></div></li>
+    <li><div class="all active">全部文章<small>(7)</small></div></li>
     
 </ul>
 <div class="left-bottom">
@@ -222,7 +225,7 @@
     </div>
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="6">
+<input type="hidden" id="yelog_site_posts_number" value="7">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -271,6 +274,38 @@
         </a>
         
         <a  class=""
+           href="/2019/08/30/CSS3-动画（animation）/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="CSS3-动画（animation）">CSS3-动画（animation）</span>
+            <span class="post-date" title="2019-08-30 16:16:15">2019/08/30</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/08/29/CSS3-P2/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="CSS3-P2自定义字体(图标)">CSS3-P2自定义字体(图标)</span>
+            <span class="post-date" title="2019-08-29 22:37:21">2019/08/29</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/08/28/hexoEditor/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="hexoEditor">hexoEditor</span>
+            <span class="post-date" title="2019-08-28 18:20:31">2019/08/28</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/08/14/Makedown基本语法/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Makedown的基本用法">Makedown的基本用法</span>
+            <span class="post-date" title="2019-08-14 23:55:45">2019/08/14</span>
+        </a>
+        
+        <a  class=""
            href="/2019/08/14/CSS3学习P1/"
            data-tag=""
            data-author="" >
@@ -284,30 +319,6 @@
            data-author="" >
             <span class="post-title" title="CSS3-P3新UI方案">CSS3-P3新UI方案</span>
             <span class="post-date" title="2019-08-29 23:12:21">2019/08/29</span>
-        </a>
-        
-        <a  class=""
-           href="/2019/08/28/hexoEditor/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="hexoEditor">hexoEditor</span>
-            <span class="post-date" title="2019-08-28 18:20:31">2019/08/28</span>
-        </a>
-        
-        <a  class=""
-           href="/2019/08/29/CSS3-P2/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="CSS3-P2自定义字体(图标)">CSS3-P2自定义字体(图标)</span>
-            <span class="post-date" title="2019-08-29 22:37:21">2019/08/29</span>
-        </a>
-        
-        <a  class=""
-           href="/2019/08/14/Makedown基本语法/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="Makedown的基本用法">Makedown的基本用法</span>
-            <span class="post-date" title="2019-08-14 23:55:45">2019/08/14</span>
         </a>
         
     </nav>

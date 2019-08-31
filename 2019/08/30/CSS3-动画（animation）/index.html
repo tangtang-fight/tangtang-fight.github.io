@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>hexoEditor | Hexo</title>
+  <title>CSS3-动画（animation） | Hexo</title>
   <meta name="keywords" content>
-  <meta name="description" content="hexoEditor | Hexo">
+  <meta name="description" content="CSS3-动画（animation） | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="一：动画（animation）animation的API 1：动画的关键帧（animation-name：关键帧名字；） 切记这里不是要动画的属性名，而是关键帧名字。关键帧名字：@keyframes 关键帧名字{}  2:动画时间（animation-duration：3s；） 3：动画的功能（animation-timing-function： ；） 4：动画延迟（animation-delay">
 <meta property="og:type" content="article">
@@ -333,9 +333,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-hexoEditor" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-CSS3-动画（animation）" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">hexoEditor</h1>
+        <h1 class="article-title">CSS3-动画（animation）</h1>
     
     <div class="article-meta">
         
@@ -345,7 +345,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-08-28 18:35:37'>2019-08-28 18:20</time>
+        创建时间:<time class="date" title='更新时间: 2019-08-30 18:02:31'>2019-08-30 16:16</time>
         
     </div>
     <div class="article-meta">
@@ -367,7 +367,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一：优秀的hexo博客编辑器"><span class="toc-text">一：优秀的hexo博客编辑器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二：功能"><span class="toc-text">二：功能</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1：截图功能"><span class="toc-text">1：截图功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-可以直接将图片上传到SM-MS图床（免费）上，并将路径变为图床的链接。"><span class="toc-text">2:可以直接将图片上传到SM.MS图床（免费）上，并将路径变为图床的链接。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3：这样启动hexo后就能在本地http-localhost-4000-上看到新写的内容。"><span class="toc-text">3：这样启动hexo后就能在本地http://localhost:4000/上看到新写的内容。</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一：动画（animation）animation的API"><span class="toc-text">一：动画（animation）animation的API</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1：动画的关键帧（animation-name：关键帧名字；）"><span class="toc-text">1：动画的关键帧（animation-name：关键帧名字；）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-动画时间（animation-duration：3s；）"><span class="toc-text">2:动画时间（animation-duration：3s；）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3：动画的功能（animation-timing-function：-；）"><span class="toc-text">3：动画的功能（animation-timing-function： ；）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4：动画延迟（animation-delay）"><span class="toc-text">4：动画延迟（animation-delay）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5：动画执行次数（animation-iteration-content：3；）"><span class="toc-text">5：动画执行次数（animation-iteration-content：3；）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6：动画方向（animation-direction：）"><span class="toc-text">6：动画方向（animation-direction：）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7：动画状态（animation-fill-mode：3；）"><span class="toc-text">7：动画状态（animation-fill-mode：3；）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8：动画的运行和暂停（animation-play-state）"><span class="toc-text">8：动画的运行和暂停（animation-play-state）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二：动画关键帧-keyframes"><span class="toc-text">二：动画关键帧(@keyframes)</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -382,15 +382,36 @@
 </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一：优秀的hexo博客编辑器"><a href="#一：优秀的hexo博客编辑器" class="headerlink" title="一：优秀的hexo博客编辑器"></a>一：优秀的hexo博客编辑器</h2><blockquote>
-<p>github下载地址：<a href="https://github.com/zhuzhuyule/HexoEditor" target="_blank" rel="noopener">https://github.com/zhuzhuyule/HexoEditor</a></p>
+        <h1 id="一：动画（animation）animation的API"><a href="#一：动画（animation）animation的API" class="headerlink" title="一：动画（animation）animation的API"></a>一：动画（animation）animation的API</h1><p><img src="https://i.loli.net/2019/08/30/s5mI768ZgAdWLDH.png" alt></p>
+<h3 id="1：动画的关键帧（animation-name：关键帧名字；）"><a href="#1：动画的关键帧（animation-name：关键帧名字；）" class="headerlink" title="1：动画的关键帧（animation-name：关键帧名字；）"></a>1：动画的关键帧（animation-name：关键帧名字；）</h3><blockquote>
+<p>切记这里不是要动画的属性名，而是关键帧名字。<br>关键帧名字：@keyframes 关键帧名字{}<br><img src="https://i.loli.net/2019/08/30/Fvj9rPJatg6sOf8.png" alt></p>
 </blockquote>
-<h2 id="二：功能"><a href="#二：功能" class="headerlink" title="二：功能"></a>二：功能</h2><h3 id="1：截图功能"><a href="#1：截图功能" class="headerlink" title="1：截图功能"></a>1：截图功能</h3><blockquote>
-<p>截图后悔在本地的文件夹下直接生成图片<br><img src="https://i.loli.net/2019/08/28/y5jmOgY2Zdz6HlX.png" alt></p>
+<h3 id="2-动画时间（animation-duration：3s；）"><a href="#2-动画时间（animation-duration：3s；）" class="headerlink" title="2:动画时间（animation-duration：3s；）"></a>2:动画时间（animation-duration：3s；）</h3><p><img src="https://i.loli.net/2019/08/30/Mqb3VlkQezchTgy.png" alt></p>
+<h3 id="3：动画的功能（animation-timing-function：-；）"><a href="#3：动画的功能（animation-timing-function：-；）" class="headerlink" title="3：动画的功能（animation-timing-function： ；）"></a>3：动画的功能（animation-timing-function： ；）</h3><p><img src="https://i.loli.net/2019/08/30/oSs9bengaPItK1f.png" alt></p>
+<h3 id="4：动画延迟（animation-delay）"><a href="#4：动画延迟（animation-delay）" class="headerlink" title="4：动画延迟（animation-delay）"></a>4：动画延迟（animation-delay）</h3><blockquote>
+<p>定义动画开始前等待时间。（动画外属性）</p>
 </blockquote>
-<hr>
-<h3 id="2-可以直接将图片上传到SM-MS图床（免费）上，并将路径变为图床的链接。"><a href="#2-可以直接将图片上传到SM-MS图床（免费）上，并将路径变为图床的链接。" class="headerlink" title="2:可以直接将图片上传到SM.MS图床（免费）上，并将路径变为图床的链接。"></a>2:可以直接将图片上传到SM.MS图床（免费）上，并将路径变为图床的链接。</h3><hr>
-<h3 id="3：这样启动hexo后就能在本地http-localhost-4000-上看到新写的内容。"><a href="#3：这样启动hexo后就能在本地http-localhost-4000-上看到新写的内容。" class="headerlink" title="3：这样启动hexo后就能在本地http://localhost:4000/上看到新写的内容。"></a>3：这样启动hexo后就能在本地<a href="http://localhost:4000/上看到新写的内容。" target="_blank" rel="noopener">http://localhost:4000/上看到新写的内容。</a></h3><hr>
+<h3 id="5：动画执行次数（animation-iteration-content：3；）"><a href="#5：动画执行次数（animation-iteration-content：3；）" class="headerlink" title="5：动画执行次数（animation-iteration-content：3；）"></a>5：动画执行次数（animation-iteration-content：3；）</h3><blockquote>
+<p>定义动画的执行次数。（只能影响动画内属性）<br>无限次：infinite；<br>重复的是关键帧：@keyframes{}</p>
+</blockquote>
+<h3 id="6：动画方向（animation-direction：）"><a href="#6：动画方向（animation-direction：）" class="headerlink" title="6：动画方向（animation-direction：）"></a>6：动画方向（animation-direction：）</h3><blockquote>
+<p><strong>属性值：①normal（默认值）；②：reverse（反转）；③：alternate（from-to-form-to 呈现s型运动）；④：alternate-reverse（反转s型运动）</strong><br>animation-direction: reverse;（反转，从to到from执行）</p>
+</blockquote>
+<p><strong>反转（reverse）：</strong><br>1）他会改变关键帧的执行方向（从to-from）。<br>2）他会改变动画其他的属性（如果动画原来是ease-in（慢到快），反转后会变成（快到慢）</p>
+<h3 id="7：动画状态（animation-fill-mode：3；）"><a href="#7：动画状态（animation-fill-mode：3；）" class="headerlink" title="7：动画状态（animation-fill-mode：3；）"></a>7：动画状态（animation-fill-mode：3；）</h3><p><strong>他有三个属性值：①backwords；②forworks；③：both；</strong></p>
+<blockquote>
+<p>原：原来动画，执行前在初始位置，执行from-to，最后执行动画完成后，回到初始位置。<br><strong>①backwords：</strong>将初始位置，移动到from处，开始执行，动画执行完成回到初始位置<br><strong>②<code>animation-fill-mode:forwards ;</code></strong>初始位置–再执行动画–动画结束停在to的位置<br><strong>③both</strong>；from位置开始，结束停在to位置（我们理想的动画）<br>初始值：none；（与原来一样）</p>
+</blockquote>
+<h3 id="8：动画的运行和暂停（animation-play-state）"><a href="#8：动画的运行和暂停（animation-play-state）" class="headerlink" title="8：动画的运行和暂停（animation-play-state）"></a>8：动画的运行和暂停（animation-play-state）</h3><blockquote>
+<p>定义了动画的运行或者暂停<br><strong>属性值：①：running（默认值）；②：paused(暂停)；</strong></p>
+</blockquote>
+<h1 id="二：动画关键帧-keyframes"><a href="#二：动画关键帧-keyframes" class="headerlink" title="二：动画关键帧(@keyframes)"></a>二：动画关键帧(@keyframes)</h1><blockquote>
+<p>语法：</p>
+</blockquote>
+<p><img src="https://i.loli.net/2019/08/30/pNzRTrWEi7D6t4x.png" alt><br>        @keyframes move{<br>                0%{<br>                    transform: translateY(-100px);<br>                }<br>                50%{<br>                    transform: translateY(-50px);<br>                }<br>                100%{<br>                    transform: translateY(100px);<br>                }<br>            }</p>
+<blockquote>
+<p>这里取代了from-to。改为百分比的形式。<br>含义：0%-50%-100%，中百分比分割的是时间。<br>也就是从0%的-100px到50%的-50px；动画时间占了总运动时间的一半。</p>
+</blockquote>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
@@ -404,12 +425,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>hexoEditor</p>
+    <p><span class="copy-title">文章标题:</span>CSS3-动画（animation）</p>
     
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="John Doe">John Doe</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-08-28, 18:20:31</p>
-    <p><span class="copy-title">最后更新:</span>2019-08-28, 18:35:37</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/08/28/hexoEditor/" title="hexoEditor">http://yoursite.com/2019/08/28/hexoEditor/</a>
+    <p><span class="copy-title">发布时间:</span>2019-08-30, 16:16:15</p>
+    <p><span class="copy-title">最后更新:</span>2019-08-30, 18:02:31</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/08/30/CSS3-动画（animation）/" title="CSS3-动画（animation）">http://yoursite.com/2019/08/30/CSS3-动画（animation）/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
