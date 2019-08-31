@@ -6,22 +6,24 @@
   <meta name="keywords" content>
   <meta name="description" content="CSS3-P2自定义字体(图标) | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="一：动画（animation）animation的API 1：动画的关键帧（animation-name：关键帧名字；） 切记这里不是要动画的属性名，而是关键帧名字。关键帧名字：@keyframes 关键帧名字{}  2:动画时间（animation-duration：3s；） 3：动画的功能（animation-timing-function： ；） 4：动画延迟（animation-delay">
+<meta name="description" content="一：动画（animation）animation的API 简写属性  /step(1,end)–end为默认值,1表示一个关键帧周期分为一步而且每个周期分配的一秒，对于step函数来说，它是在0%停了一秒，而不是在0%-25%关键帧周期:(0%-25%)就是一个关键帧周期/  注意：此动画分了4个阶段，在step在0%，25%，50%，75%都停了一秒，导致最后75-100%这个周期无法进行 an">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS3-动画（animation）">
 <meta property="og:url" content="http://yoursite.com/2019/08/30/CSS3-动画（animation）/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一：动画（animation）animation的API 1：动画的关键帧（animation-name：关键帧名字；） 切记这里不是要动画的属性名，而是关键帧名字。关键帧名字：@keyframes 关键帧名字{}  2:动画时间（animation-duration：3s；） 3：动画的功能（animation-timing-function： ；） 4：动画延迟（animation-delay">
+<meta property="og:description" content="一：动画（animation）animation的API 简写属性  /step(1,end)–end为默认值,1表示一个关键帧周期分为一步而且每个周期分配的一秒，对于step函数来说，它是在0%停了一秒，而不是在0%-25%关键帧周期:(0%-25%)就是一个关键帧周期/  注意：此动画分了4个阶段，在step在0%，25%，50%，75%都停了一秒，导致最后75-100%这个周期无法进行 an">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://i.loli.net/2019/08/30/s5mI768ZgAdWLDH.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/7Yql4sHAMQbxGWT.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/gXAha1I3qG5bdNW.png">
 <meta property="og:image" content="https://i.loli.net/2019/08/30/Fvj9rPJatg6sOf8.png">
 <meta property="og:image" content="https://i.loli.net/2019/08/30/Mqb3VlkQezchTgy.png">
 <meta property="og:image" content="https://i.loli.net/2019/08/30/oSs9bengaPItK1f.png">
 <meta property="og:image" content="https://i.loli.net/2019/08/30/pNzRTrWEi7D6t4x.png">
-<meta property="og:updated_time" content="2019-08-31T02:25:40.158Z">
+<meta property="og:updated_time" content="2019-08-31T02:52:28.504Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS3-动画（animation）">
-<meta name="twitter:description" content="一：动画（animation）animation的API 1：动画的关键帧（animation-name：关键帧名字；） 切记这里不是要动画的属性名，而是关键帧名字。关键帧名字：@keyframes 关键帧名字{}  2:动画时间（animation-duration：3s；） 3：动画的功能（animation-timing-function： ；） 4：动画延迟（animation-delay">
+<meta name="twitter:description" content="一：动画（animation）animation的API 简写属性  /step(1,end)–end为默认值,1表示一个关键帧周期分为一步而且每个周期分配的一秒，对于step函数来说，它是在0%停了一秒，而不是在0%-25%关键帧周期:(0%-25%)就是一个关键帧周期/  注意：此动画分了4个阶段，在step在0%，25%，50%，75%都停了一秒，导致最后75-100%这个周期无法进行 an">
 <meta name="twitter:image" content="https://i.loli.net/2019/08/30/s5mI768ZgAdWLDH.png">
 
 
@@ -266,14 +268,6 @@
     <nav id="title-list-nav">
         
         <a  class=""
-           href="/2019/08/29/CSS3-3D变换/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="CSS3-3D变换">CSS3-3D变换</span>
-            <span class="post-date" title="2019-08-29 14:59:13">2019/08/29</span>
-        </a>
-        
-        <a  class=""
            href="/2019/08/29/CSS3-P2/"
            data-tag=""
            data-author="" >
@@ -282,19 +276,19 @@
         </a>
         
         <a  class=""
-           href="/2019/08/29/CSS3-P3新UI方案/"
+           href="/2019/08/29/CSS3-3D变换/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="CSS3-P3新UI方案">CSS3-P3新UI方案</span>
-            <span class="post-date" title="2019-08-29 23:12:21">2019/08/29</span>
+            <span class="post-title" title="CSS3-3D变换">CSS3-3D变换</span>
+            <span class="post-date" title="2019-08-29 14:59:13">2019/08/29</span>
         </a>
         
         <a  class=""
-           href="/2019/08/14/Makedown基本语法/"
+           href="/2019/08/30/CSS3-动画（animation）/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="Makedown的基本用法">Makedown的基本用法</span>
-            <span class="post-date" title="2019-08-14 23:55:45">2019/08/14</span>
+            <span class="post-title" title="CSS3-动画（animation）">CSS3-动画（animation）</span>
+            <span class="post-date" title="2019-08-30 16:16:15">2019/08/30</span>
         </a>
         
         <a  class=""
@@ -302,6 +296,14 @@
            data-tag=""
            data-author="" >
             <span class="post-title" title="CSS3学习">CSS3学习</span>
+            <span class="post-date" title="2019-08-14 23:55:45">2019/08/14</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/08/14/Makedown基本语法/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Makedown的基本用法">Makedown的基本用法</span>
             <span class="post-date" title="2019-08-14 23:55:45">2019/08/14</span>
         </a>
         
@@ -314,11 +316,11 @@
         </a>
         
         <a  class=""
-           href="/2019/08/30/CSS3-动画（animation）/"
+           href="/2019/08/29/CSS3-P3新UI方案/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="CSS3-动画（animation）">CSS3-动画（animation）</span>
-            <span class="post-date" title="2019-08-30 16:16:15">2019/08/30</span>
+            <span class="post-title" title="CSS3-P3新UI方案">CSS3-P3新UI方案</span>
+            <span class="post-date" title="2019-08-29 23:12:21">2019/08/29</span>
         </a>
         
     </nav>
