@@ -6,25 +6,30 @@
   <meta name="keywords" content>
   <meta name="description" content="hexoEditor | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="一：动画（animation）animation的API 简写属性  /step(1,end)–end为默认值,1表示一个关键帧周期分为一步而且每个周期分配的一秒，对于step函数来说，它是在0%停了一秒，而不是在0%-25%关键帧周期:(0%-25%)就是一个关键帧周期/  注意：此动画分了4个阶段，在step在0%，25%，50%，75%都停了一秒，导致最后75-100%这个周期无法进行 an">
+<meta name="description" content="CSS2=&amp;gt;CSS3布局 CSS2中为布局而生的（只有一种）：table布局（不用了）table布局的缺点：①：浏览器每次渲染table布局时不是流式的（table加载完了，才开始渲染），性能及其低下。②：修改table内的任何布局，整个table都要重新进行渲染。   CSS3布局扩展（为布局而生） 三种布局：①：flex布局②：响应式布局③：多列布局  一：flex布局(弹性布局/盒子)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS3-动画（animation）">
-<meta property="og:url" content="http://yoursite.com/2019/08/30/CSS3-动画（animation）/index.html">
+<meta property="og:title" content="CSS3-布局扩展">
+<meta property="og:url" content="http://yoursite.com/2019/09/02/CSS3-布局扩展/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一：动画（animation）animation的API 简写属性  /step(1,end)–end为默认值,1表示一个关键帧周期分为一步而且每个周期分配的一秒，对于step函数来说，它是在0%停了一秒，而不是在0%-25%关键帧周期:(0%-25%)就是一个关键帧周期/  注意：此动画分了4个阶段，在step在0%，25%，50%，75%都停了一秒，导致最后75-100%这个周期无法进行 an">
+<meta property="og:description" content="CSS2=&amp;gt;CSS3布局 CSS2中为布局而生的（只有一种）：table布局（不用了）table布局的缺点：①：浏览器每次渲染table布局时不是流式的（table加载完了，才开始渲染），性能及其低下。②：修改table内的任何布局，整个table都要重新进行渲染。   CSS3布局扩展（为布局而生） 三种布局：①：flex布局②：响应式布局③：多列布局  一：flex布局(弹性布局/盒子)">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://i.loli.net/2019/08/30/s5mI768ZgAdWLDH.png">
-<meta property="og:image" content="https://i.loli.net/2019/08/31/7Yql4sHAMQbxGWT.png">
-<meta property="og:image" content="https://i.loli.net/2019/08/31/gXAha1I3qG5bdNW.png">
-<meta property="og:image" content="https://i.loli.net/2019/08/30/Fvj9rPJatg6sOf8.png">
-<meta property="og:image" content="https://i.loli.net/2019/08/30/Mqb3VlkQezchTgy.png">
-<meta property="og:image" content="https://i.loli.net/2019/08/30/oSs9bengaPItK1f.png">
-<meta property="og:image" content="https://i.loli.net/2019/08/30/pNzRTrWEi7D6t4x.png">
-<meta property="og:updated_time" content="2019-08-31T02:52:28.504Z">
+<meta property="og:image" content="https://i.loli.net/2019/09/02/DUhM5qsZcFnkXvl.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/02/xKjdW9A5z43ZbPN.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/02/jxUBaGATWcZl7yr.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/02/3WAeR5pNyCHkr1q.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/02/sCSYPmtjQFo4e6I.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/02/vY9qLwkB7pjheZD.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/02/Og5PWFcikaUtNme.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/02/eacKnwOGrhS2CuD.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/02/dAlaimRrIyqnebF.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/02/Fzf2D8tZX3vsqWT.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/02/4IVMgH7UXbrW8Dj.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/02/cOm9eli8VyxTaSC.png">
+<meta property="og:updated_time" content="2019-09-02T12:42:09.637Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS3-动画（animation）">
-<meta name="twitter:description" content="一：动画（animation）animation的API 简写属性  /step(1,end)–end为默认值,1表示一个关键帧周期分为一步而且每个周期分配的一秒，对于step函数来说，它是在0%停了一秒，而不是在0%-25%关键帧周期:(0%-25%)就是一个关键帧周期/  注意：此动画分了4个阶段，在step在0%，25%，50%，75%都停了一秒，导致最后75-100%这个周期无法进行 an">
-<meta name="twitter:image" content="https://i.loli.net/2019/08/30/s5mI768ZgAdWLDH.png">
+<meta name="twitter:title" content="CSS3-布局扩展">
+<meta name="twitter:description" content="CSS2=&amp;gt;CSS3布局 CSS2中为布局而生的（只有一种）：table布局（不用了）table布局的缺点：①：浏览器每次渲染table布局时不是流式的（table加载完了，才开始渲染），性能及其低下。②：修改table内的任何布局，整个table都要重新进行渲染。   CSS3布局扩展（为布局而生） 三种布局：①：flex布局②：响应式布局③：多列布局  一：flex布局(弹性布局/盒子)">
+<meta name="twitter:image" content="https://i.loli.net/2019/09/02/DUhM5qsZcFnkXvl.png">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -215,7 +220,7 @@
 
 
 <ul>
-    <li><div class="all active">全部文章<small>(7)</small></div></li>
+    <li><div class="all active">全部文章<small>(9)</small></div></li>
     
 </ul>
 <div class="left-bottom">
@@ -227,7 +232,7 @@
     </div>
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="7">
+<input type="hidden" id="yelog_site_posts_number" value="9">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -284,11 +289,35 @@
         </a>
         
         <a  class=""
+           href="/2019/09/02/CSS3-布局扩展/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="CSS3-布局扩展">CSS3-布局扩展</span>
+            <span class="post-date" title="2019-09-02 09:03:07">2019/09/02</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/08/31/CSS3-兔斯基动画/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="CSS3-布局扩展">CSS3-布局扩展</span>
+            <span class="post-date" title="2019-08-31 10:58:58">2019/08/31</span>
+        </a>
+        
+        <a  class=""
            href="/2019/08/30/CSS3-动画（animation）/"
            data-tag=""
            data-author="" >
             <span class="post-title" title="CSS3-动画（animation）">CSS3-动画（animation）</span>
             <span class="post-date" title="2019-08-30 16:16:15">2019/08/30</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/08/28/hexoEditor/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="hexoEditor">hexoEditor</span>
+            <span class="post-date" title="2019-08-28 18:20:31">2019/08/28</span>
         </a>
         
         <a  class=""
@@ -305,14 +334,6 @@
            data-author="" >
             <span class="post-title" title="Makedown的基本用法">Makedown的基本用法</span>
             <span class="post-date" title="2019-08-14 23:55:45">2019/08/14</span>
-        </a>
-        
-        <a  class=""
-           href="/2019/08/28/hexoEditor/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="hexoEditor">hexoEditor</span>
-            <span class="post-date" title="2019-08-28 18:20:31">2019/08/28</span>
         </a>
         
         <a  class=""
