@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>CSS3-P2自定义字体(图标) | Hexo</title>
+  <title>某东-静态页面练习 | Hexo</title>
   <meta name="keywords" content>
-  <meta name="description" content="CSS3-P2自定义字体(图标) | Hexo">
+  <meta name="description" content="某东-静态页面练习 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="响应式布局 css3媒体查询是响应式的核心">
 <meta property="og:type" content="article">
@@ -391,9 +391,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-CSS3-P2" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-某东-静态页面练习" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">CSS3-P2自定义字体(图标)</h1>
+        <h1 class="article-title">某东-静态页面练习</h1>
     
     <div class="article-meta">
         
@@ -403,7 +403,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-08-29 22:47:23'>2019-08-29 22:37</time>
+        创建时间:<time class="date" title='更新时间: 2019-09-02 23:09:20'>2019-09-02 20:44</time>
         
     </div>
     <div class="article-meta">
@@ -425,7 +425,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#P2自定义字体"><span class="toc-text">P2自定义字体</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一：自定义字体"><span class="toc-text">一：自定义字体</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（1）对于font：简写属性：是以font-size为中心，也就是说要将其放在简写属性的中间。（而且必须要有font-size与font-family两个要不简写属性就无法生效）。"><span class="toc-text">（1）对于font：简写属性：是以font size为中心，也就是说要将其放在简写属性的中间。（而且必须要有font size与font family两个要不简写属性就无法生效）。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（2）Window自带的font：有些字体可以用，有些字体不能用。现在我们UI设计了这个不能用的字体，需要每个人都用这个字体。—–就是不能让用户依赖操作系统的字体，这个字体放在服务器上。"><span class="toc-text">（2）Window自带的font：有些字体可以用，有些字体不能用。现在我们UI设计了这个不能用的字体，需要每个人都用这个字体。—–就是不能让用户依赖操作系统的字体，这个字体放在服务器上。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（3）自定义字体："><span class="toc-text">（3）自定义字体：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（4）自定义图标："><span class="toc-text">（4）自定义图标：</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#准备工作"><span class="toc-text">准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一：代码规范（参考某东的代码规范）"><span class="toc-text">一：代码规范（参考某东的代码规范）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二：前期准备工作"><span class="toc-text">二：前期准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-：引入网页图标"><span class="toc-text">1)：引入网页图标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-：制作ico图标"><span class="toc-text">2)：制作ico图标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-：网站优化的三大标签"><span class="toc-text">3)：网站优化的三大标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-：字体图标"><span class="toc-text">4)：字体图标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-：追加字体图标"><span class="toc-text">5)：追加字体图标</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -440,11 +440,20 @@
 </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="P2自定义字体"><a href="#P2自定义字体" class="headerlink" title="P2自定义字体"></a>P2自定义字体</h1><h2 id="一：自定义字体"><a href="#一：自定义字体" class="headerlink" title="一：自定义字体"></a>一：自定义字体</h2><h3 id="（1）对于font：简写属性：是以font-size为中心，也就是说要将其放在简写属性的中间。（而且必须要有font-size与font-family两个要不简写属性就无法生效）。"><a href="#（1）对于font：简写属性：是以font-size为中心，也就是说要将其放在简写属性的中间。（而且必须要有font-size与font-family两个要不简写属性就无法生效）。" class="headerlink" title="（1）对于font：简写属性：是以font size为中心，也就是说要将其放在简写属性的中间。（而且必须要有font size与font family两个要不简写属性就无法生效）。"></a>（1）对于font：简写属性：是以font size为中心，也就是说要将其放在简写属性的中间。（而且必须要有font size与font family两个要不简写属性就无法生效）。</h3><h3 id="（2）Window自带的font：有些字体可以用，有些字体不能用。现在我们UI设计了这个不能用的字体，需要每个人都用这个字体。—–就是不能让用户依赖操作系统的字体，这个字体放在服务器上。"><a href="#（2）Window自带的font：有些字体可以用，有些字体不能用。现在我们UI设计了这个不能用的字体，需要每个人都用这个字体。—–就是不能让用户依赖操作系统的字体，这个字体放在服务器上。" class="headerlink" title="（2）Window自带的font：有些字体可以用，有些字体不能用。现在我们UI设计了这个不能用的字体，需要每个人都用这个字体。—–就是不能让用户依赖操作系统的字体，这个字体放在服务器上。"></a>（2）Window自带的font：有些字体可以用，有些字体不能用。现在我们UI设计了这个不能用的字体，需要每个人都用这个字体。—–就是不能让用户依赖操作系统的字体，这个字体放在服务器上。</h3><h3 id="（3）自定义字体："><a href="#（3）自定义字体：" class="headerlink" title="（3）自定义字体："></a>（3）自定义字体：</h3><p>/<em>使用@font-face自定义字体</em>/<br>/<em>需要通过网络进行下载</em>/<br>                        @font-face {<br>                            font-family:”ss”;<br>                            src:url(font/GABRIOLA.TTF);<br>            }<br><strong>优点：可以完全还原UI<br>缺点：会影响性能。</strong><br><img src="https://i.loli.net/2019/08/29/pKXEvug7DM4JHB6.png" alt></p>
-<p><strong>注意：就是不能放在声明快的内部，只能放在外面。</strong></p>
-<h3 id="（4）自定义图标："><a href="#（4）自定义图标：" class="headerlink" title="（4）自定义图标："></a>（4）自定义图标：</h3><p><strong>（1)</strong><br>工具：AI    (画矢量图)        fontlab：（用来做字体）<br>网站：拿到字体后=&gt;生成字体图标–生成字体包<br><a href="https://www.fontsquirrel.com/" target="_blank" rel="noopener">https://www.fontsquirrel.com/</a><br><a href="https://icomoon.io/app/#/select" target="_blank" rel="noopener">https://icomoon.io/app/#/select</a><br><strong>（2）</strong>刚给一个字体q绑定了一个，所以当下面出现字体q时。<br><img src="https://i.loli.net/2019/08/29/z5LkbZUfIwYlEeS.png" alt><br><strong>（3）</strong>给字体q绑定了自定义字体，所以形成了自定义的q。</p>
-<p><strong>（4）</strong>有了矢量图，打开网站<br><a href="https://icomoon.io/app/#/select" target="_blank" rel="noopener">https://icomoon.io/app/#/select</a><br>将UI给你的矢量图导入<br><img src="https://i.loli.net/2019/08/29/DYgbOFivQjAN5GH.png" alt></p>
-<p>（6）将包导入项目<br>此时style.css是主要的样式<br>1）向html中导入这个样式<link><br>2）然后在style.css中查看你需要用的，将类名复制<br><img src="https://i.loli.net/2019/08/29/Ng2yfJMwlBqL7US.png" alt><br><img src="https://i.loli.net/2019/08/29/qtFfZxiT6oAHr5R.png" alt><br>（7）如果要修改大小，多加一个类。<br><img src="https://i.loli.net/2019/08/29/JK5VEalDUGBneXP.png" alt><br>然后开始调整<br><img src="https://i.loli.net/2019/08/29/VCWb51Nwgo8qdBZ.png" alt><br>效果<br><img src="https://i.loli.net/2019/08/29/47PWmgOuLiJKxzk.png" alt></p>
+        <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="一：代码规范（参考某东的代码规范）"><a href="#一：代码规范（参考某东的代码规范）" class="headerlink" title="一：代码规范（参考某东的代码规范）"></a>一：代码规范（参考某东的代码规范）</h2><h2 id="二：前期准备工作"><a href="#二：前期准备工作" class="headerlink" title="二：前期准备工作"></a>二：前期准备工作</h2><blockquote>
+<p>要实现结构和样式相分离的设计思想</p>
+</blockquote>
+<h3 id="1-：引入网页图标"><a href="#1-：引入网页图标" class="headerlink" title="1)：引入网页图标"></a>1)：引入网页图标</h3><p> 获取图标网站尾部加入/favicon。ico</p>
+<pre><code>&lt;!--引入favicon.ico网页图标--&gt;
+&lt;link rel=&quot;stortcut icon&quot; href=&quot;jingdong.ico&quot; type=&quot;image/x-ico&quot;/&gt;</code></pre><p>结果：<br><img src="/%E6%9F%90%E4%B8%9C-%E9%9D%99%E6%80%81%E9%A1%B5%E9%9D%A2%E7%BB%83%E4%B9%A0/20190902092405513.png" alt></p>
+<h3 id="2-：制作ico图标"><a href="#2-：制作ico图标" class="headerlink" title="2)：制作ico图标"></a>2)：制作ico图标</h3><p>1：用ps截取为png图片<br>2：使用第三方网站（比特虫<a href="https://www.bitbug.net" target="_blank" rel="noopener">https://www.bitbug.net</a> ） 将其转化为icon格式。<br>3：在网页中一般使用：16*16或32*32或48*48为主</p>
+<h3 id="3-：网站优化的三大标签"><a href="#3-：网站优化的三大标签" class="headerlink" title="3)：网站优化的三大标签"></a>3)：网站优化的三大标签</h3><p><strong>①：title规范<br></strong><br>SEO:搜索引擎优化<br><br>我们写的网站要符合搜索引擎的规范<br><br>1：网站标题的优化（越先出现的权重越高）<br><br>例：品优购-综合网购首选-正品低价、品质保障、配送及时、轻松购物！</p>
+<blockquote>
+<p>首先应该出现的是网站名-介绍（不超过25个字）<br></p>
+</blockquote>
+<p><strong>②：Description 网站说明</strong><br>1:要吸引人<br><br>2：不超过120字<br><br>    <code>&lt;meta name=&quot;description&quot; content=&quot;品优购JD.COM-专业的综合网上购物商城，销售家电，数码产品、电脑、家具百货、服装、母婴、图书、食品等数万个品牌优质商品。边界，诚信的服务，为您提供预约的网上购物体验！&quot;/&gt;</code><br><strong>3:keywords 关键词</strong></p>
+<h3 id="4-：字体图标"><a href="#4-：字体图标" class="headerlink" title="4)：字体图标"></a>4)：字体图标</h3><p>1：优点很多<br><br>2：优秀的字体图标素材网站<br><br>①：<a href="https://www.iconfont.cn/" target="_blank" rel="noopener">https://www.iconfont.cn/</a><br><br>②:<a href="http://https://icomoon.io" target="_blank" rel="noopener">https://icomoon.io</a></p>
+<h3 id="5-：追加字体图标"><a href="#5-：追加字体图标" class="headerlink" title="5)：追加字体图标"></a>5)：追加字体图标</h3><p>1：在网站上上传json文件，再追加</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
@@ -458,12 +467,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>CSS3-P2自定义字体(图标)</p>
+    <p><span class="copy-title">文章标题:</span>某东-静态页面练习</p>
     
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="John Doe">John Doe</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-08-29, 22:37:21</p>
-    <p><span class="copy-title">最后更新:</span>2019-08-29, 22:47:23</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/08/29/CSS3-P2/" title="CSS3-P2自定义字体(图标)">http://yoursite.com/2019/08/29/CSS3-P2/</a>
+    <p><span class="copy-title">发布时间:</span>2019-09-02, 20:44:39</p>
+    <p><span class="copy-title">最后更新:</span>2019-09-02, 23:09:20</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/09/02/某东-静态页面练习/" title="某东-静态页面练习">http://yoursite.com/2019/09/02/某东-静态页面练习/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
